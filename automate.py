@@ -20,7 +20,7 @@ while True:
 		print("Start Login, see the log file {} for the program output".format(LOG_PATH_ABS))
 		subprocess.Popen(cmd,stdout=f).wait()
 
-	waittime = random.randint(10, 36000)
+	waittime = random.randint(10, 3600)
 	print("Wait for {} seconds ({:.2f} hours)".format(waittime, waittime/60/60))
 	time.sleep(waittime)
 
